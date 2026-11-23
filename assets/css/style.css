@@ -16619,3 +16619,9 @@ body {
     object-fit: cover;
     display: block;
 }
+
+/* Preserve Bootstrap row gutters with the custom container width. */
+.container {
+    padding-left: 12px;
+    padding-right: 12px;
+}
