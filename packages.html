@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adventure Packages | Alpine Ascent</title>
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/packages.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+    <div class="container">
+
+        <!-- LOGO -->
+         <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.jpg"
+                     width="48"
+                     height="48"
+                     class="rounded-circle me-2"
+                     style="object-fit:cover;"
+                     alt="Alpine Ascent Logo">
+
+                <span class="brand-name">Alpine Ascent</span>
+            </a>
+
+        <!-- MOBILE TOGGLE -->
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAV LINKS -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        About Us
+                    </a>
+                </li>
+ <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">
+                        gallery
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="destination.html">
+                        Destinations
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="packages.html">
+                        Packages
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- BOOK BUTTON -->
+            <div class="nav-action">
+                <a href="contact.html" class="book-btn">
+                    Book Your Trip
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- NAVBAR END -->
+
+
+<!-- HERO SECTION -->
+<section class="package-hero">
+    <div class="hero-content">
+        <span>DISCOVER YOUR NEXT ADVENTURE</span>
+
+        <h1>Explore Our Adventure Packages</h1>
+
+        <p>
+            Discover breathtaking destinations, unforgettable journeys
+            and extraordinary mountain adventures with Alpine Ascent.
+        </p>
+
+        <a href="#packages" class="main-btn">
+            Explore Packages <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+
+<!-- INTRO SECTION -->
+<section class="intro-section">
+    <div class="container text-center">
+
+        <span class="section-tag">OUR PACKAGES</span>
+
+        <h2>Find Your Perfect Adventure</h2>
+
+        <p>
+            Whether you love trekking, hiking or camping,
+            we have the perfect adventure waiting for you.
+            Choose your journey and create unforgettable memories.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- FILTER BUTTONS -->
+<section class="packages-section" id="packages">
+
+    <div class="container">
+
+        <div class="filter-buttons text-center mb-5">
+
+            <button class="filter-btn active" data-filter="all">
+                All Packages
+            </button>
+
+            <button class="filter-btn" data-filter="trekking">
+                Trekking
+            </button>
+
+            <button class="filter-btn" data-filter="hiking">
+                Hiking
+            </button>
+
+            <button class="filter-btn" data-filter="camping">
+                Camping
+            </button>
+
+        </div>
+
+
+        <div class="row g-4" id="packageContainer">
+
+            <!-- PACKAGE 1 -->
+            <div class="col-lg-4 col-md-6 package-item"
+            data-category="trekking">
+
+                <div class="package-card">
+
+                    <div class="package-image">
+                        <img src="assets/images/k2camp.jpg" alt="K2 Adventure">
+
+                        <span class="package-label">Popular</span>
+                    </div>
+
+                    <div class="package-content">
+
+                        <div class="package-info">
+                            <span><i class="fas fa-clock"></i> 12 Days</span>
+                            <span><i class="fas fa-mountain"></i> Trekking</span>
+                        </div>
+
+                        <h3>K2 Base Camp Adventure</h3>
+
+                        <p>
+                            Experience the beauty of the mighty
+                            Karakoram mountains and breathtaking glaciers.
+                        </p>
+
+                        <div class="package-bottom">
+                            <div>
+                                <small>Starting From</small>
+                                <h4>PKR 1,95000</h4>
+                            </div>
+
+                            <a href="k2-details.html" class="details-btn">
+                                View Details
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PACKAGE 2 -->
+            <div class="col-lg-4 col-md-6 package-item"
+            data-category="hiking">
+
+                <div class="package-card">
+
+                    <div class="package-image">
+                        <img src="assets/images/fairy.jpg"
+                        alt="Fairy Meadows">
+
+                        <span class="package-label">Best Choice</span>
+                    </div>
+
+                    <div class="package-content">
+
+                        <div class="package-info">
+                            <span><i class="fas fa-clock"></i> 5 Days</span>
+                            <span><i class="fas fa-hiking"></i> Hiking</span>
+                        </div>
+
+                        <h3>Fairy Meadows Escape</h3>
+
+                        <p>
+                            Enjoy stunning views of Nanga Parbat
+                            surrounded by lush green landscapes.
+                        </p>
+
+                        <div class="package-bottom">
+                            <div>
+                                <small>Starting From</small>
+                                <h4>PKR 55,000</h4>
+                            </div>
+
+                            <a href="fairy-details.html" class="details-btn">
+                                View Details
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PACKAGE 3 -->
+            <div class="col-lg-4 col-md-6 package-item"
+            data-category="camping">
+
+                <div class="package-card">
+
+                    <div class="package-image">
+                        <img src="assets/images/hunza.webp"
+                        alt="Hunza Valley">
+
+                    </div>
+
+                    <div class="package-content">
+
+                        <div class="package-info">
+                            <span><i class="fas fa-clock"></i> 6 Days</span>
+                            <span><i class="fas fa-campground"></i> Camping</span>
+                        </div>
+
+                        <h3>Hunza Valley Experience</h3>
+
+                        <p>
+                            Explore beautiful valleys, peaceful lakes
+                            and the unforgettable mountain scenery.
+                        </p>
+
+                        <div class="package-bottom">
+                            <div>
+                                <small>Starting From</small>
+                                <h4>PKR 35,000</h4>
+                            </div>
+
+                            <a href="hunza-details.html" class="details-btn">
+                                View Details
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PACKAGE 4 -->
+            <div class="col-lg-4 col-md-6 package-item"
+            data-category="trekking">
+
+                <div class="package-card">
+
+                    <div class="package-image">
+                        <video src="assets/nanga.mp4"autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+                        alt="Nanga Parbat">
+
+                    </div>
+
+                    <div class="package-content">
+
+                        <div class="package-info">
+                            <span><i class="fas fa-clock"></i> 10 Days</span>
+                            <span><i class="fas fa-mountain"></i> Trekking</span>
+                        </div>
+
+                        <h3>Nanga Parbat Expedition</h3>
+
+                        <p>
+                            Discover dramatic mountain views
+                            and thrilling trekking experiences.
+                        </p>
+
+                        <div class="package-bottom">
+                            <div>
+                                <small>Starting From</small>
+                                <h4>PKR 60,000</h4>
+                            </div>
+
+                            <a href="nanga-details.html" class="details-btn">
+                                View Details
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PACKAGE 5 -->
+            <div class="col-lg-4 col-md-6 package-item"
+            data-category="hiking">
+
+                <div class="package-card">
+
+                    <div class="package-image">
+                        <img src="assets/images/SKARDU.jpg"
+                        alt="Skardu">
+
+                    </div>
+
+                    <div class="package-content">
+
+                        <div class="package-info">
+                            <span><i class="fas fa-clock"></i> 4 Days</span>
+                            <span><i class="fas fa-hiking"></i> Hiking</span>
+                        </div>
+
+                        <h3>Skardu Mountain Journey</h3>
+
+                        <p>
+                            Enjoy magnificent lakes, cold deserts
+                            and peaceful mountain landscapes.
+                        </p>
+
+                        <div class="package-bottom">
+                            <div>
+                                <small>Starting From</small>
+                                <h4>PKR 60,000</h4>
+                            </div>
+
+                            <a href="skardu-details.html" class="details-btn">
+                                View Details
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PACKAGE 6 -->
+            <div class="col-lg-4 col-md-6 package-item"
+            data-category="camping">
+
+                <div class="package-card">
+
+                    <div class="package-image">
+                        <img src="assets/images/ATTABAD.webp"
+                        alt="Attabad Lake">
+
+                    </div>
+
+                    <div class="package-content">
+
+                        <div class="package-info">
+                            <span><i class="fas fa-clock"></i> 3 Days</span>
+                            <span><i class="fas fa-campground"></i> Camping</span>
+                        </div>
+
+                        <h3>Attabad Lake Retreat</h3>
+
+                        <p>
+                            Spend unforgettable days near turquoise
+                            waters and beautiful mountain scenery.
+                        </p>
+
+                        <div class="package-bottom">
+                            <div>
+                                <small>Starting From</small>
+                                <h4>PKR 45,000</h4>
+                            </div>
+
+                            <a href="attabad-details.html" class="details-btn">
+                                View Details
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- WHY CHOOSE US -->
+<section class="why-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <span class="section-tag">WHY ALPINE ASCENT</span>
+            <h2>Adventure With Confidence</h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-3 col-6">
+                <div class="why-card">
+                    <i class="fas fa-user-shield"></i>
+                    <h5>Safe Adventures</h5>
+                    <p>Safety-focused travel planning.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="why-card">
+                    <i class="fas fa-users"></i>
+                    <h5>Expert Guides</h5>
+                    <p>Experienced local guides.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="why-card">
+                    <i class="fas fa-wallet"></i>
+                    <h5>Great Value</h5>
+                    <p>Adventure packages for every budget.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="why-card">
+                    <i class="fas fa-heart"></i>
+                    <h5>Memorable Trips</h5>
+                    <p>Experiences worth remembering.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+
+    <div class="container text-center">
+
+        <h2>Ready For Your Next Adventure?</h2>
+
+        <p>
+            Your dream mountain journey is just one step away.
+            Contact our team and plan your adventure today.
+        </p>
+
+        <a href="contact.html" class="main-btn">
+            Plan Your Trip <i class="fas fa-arrow-right"></i>
+        </a>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+                <h3>Alpine Ascent</h3>
+
+                <p>
+                    Explore the beauty of mountains and discover
+                    unforgettable adventures with us.
+                </p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <h5>Quick Links</h5>
+                <a href="index.html">Home</a>
+                <a href="destination.html">Destinations</a>
+                <a href="packages.html">Packages</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="col-lg-4">
+                <h5>Contact Us</h5>
+                <p><i class="fas fa-envelope"></i> info@alpineascent.com</p>
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fas fa-map-marker-alt"></i> Pakistan</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 Alpine Ascent. All Rights Reserved.
+        </p>
+
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/packages.js"></script>
+
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore beautiful travel destinations with Alpine Ascent.">
+    <title>Destinations | Alpine Ascent</title>
+
+    <link rel="stylesheet" href="destination.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+    <div class="container">
+
+        <!-- LOGO -->
+         <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.jpg"
+                     width="48"
+                     height="48"
+                     class="rounded-circle me-2"
+                     style="object-fit:cover;"
+                     alt="Alpine Ascent Logo">
+
+                <span class="brand-name">Alpine Ascent</span>
+            </a>
+
+        <!-- MOBILE TOGGLE -->
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAV LINKS -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                 <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">
+                        gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="destination.html">
+                        Destinations
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="packages.html">
+                        Packages
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- BOOK BUTTON -->
+            <div class="nav-action">
+                <a href="contact.html" class="book-btn">
+                    Book Your Trip
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- HERO SECTION -->
+<header class="destination-hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <span class="hero-tag">DISCOVER THE WORLD WITH US</span>
+        <h1>Explore Amazing<br>Destinations</h1>
+        <p>Discover breathtaking mountains, peaceful lakes and unforgettable places.</p>
+        <a href="#destination-list" class="primary-btn">
+            Explore Destinations <i class="fa-solid fa-arrow-down"></i>
+        </a>
+    </div>
+</header>
+
+<!-- INTRO SECTION -->
+<section class="intro-section">
+    <div class="container text-center">
+        <span class="section-label">FIND YOUR NEXT ADVENTURE</span>
+        <h2>Places That Take Your Breath Away</h2>
+        <p>
+            From the majestic peaks of the north to beautiful valleys and
+            crystal-clear lakes, find the perfect destination for your next journey.
+        </p>
+    </div>
+</section>
+
+<!-- SEARCH AND FILTER -->
+<section class="destination-section" id="destination-list">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-label">OUR DESTINATIONS</span>
+            <h2>Explore Beautiful Places</h2>
+            <p>Choose your favourite destination and start your journey.</p>
+        </div>
+
+        <div class="search-filter-area">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput"
+                    placeholder="Search destinations...">
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Places</button>
+                <button class="filter-btn" data-filter="mountain">Mountains</button>
+                <button class="filter-btn" data-filter="lake">Lakes</button>
+                <button class="filter-btn" data-filter="valley">Valleys</button>
+            </div>
+        </div>
+
+        <!-- DESTINATION CARDS -->
+        <div class="row g-4" id="destinationCards">
+
+            <!-- Hunza -->
+            <div class="col-lg-4 col-md-6 destination-item" data-category="valley">
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900"
+                            alt="Beautiful mountain valley">
+                        <span class="location-tag">Gilgit-Baltistan</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-location">
+                            <i class="fa-solid fa-location-dot"></i> Pakistan
+                        </div>
+                        <h3>Hunza Valley</h3>
+                        <p>Experience stunning mountain views, peaceful villages and unforgettable natural beauty.</p>
+                        <div class="card-bottom">
+                            <span><i class="fa-solid fa-mountain"></i> Nature Escape</span>
+                            <button class="details-btn"
+                                data-name="Hunza Valley"
+                                data-location="Gilgit-Baltistan, Pakistan"
+                                data-description="Hunza Valley is famous for its spectacular mountain scenery, welcoming communities, historic forts and beautiful landscapes. It is a wonderful destination for sightseeing and adventure.">
+                                View Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skardu -->
+            <div class="col-lg-4 col-md-6 destination-item" data-category="lake">
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900"
+                            alt="Beautiful lake and mountains">
+                        <span class="location-tag">Gilgit-Baltistan</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-location">
+                            <i class="fa-solid fa-location-dot"></i> Pakistan
+                        </div>
+                        <h3>Skardu</h3>
+                        <p>Discover beautiful lakes, dramatic mountains and peaceful landscapes in northern Pakistan.</p>
+                        <div class="card-bottom">
+                            <span><i class="fa-solid fa-water"></i> Lake Views</span>
+                            <button class="details-btn"
+                                data-name="Skardu"
+                                data-location="Gilgit-Baltistan, Pakistan"
+                                data-description="Skardu is a gateway to some of the world's most impressive mountain landscapes. Explore its lakes, valleys, cold deserts and scenic viewpoints.">
+                                View Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Naran -->
+            <div class="col-lg-4 col-md-6 destination-item" data-category="valley">
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900"
+                            alt="Mountain landscape">
+                        <span class="location-tag">Khyber Pakhtunkhwa</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-location">
+                            <i class="fa-solid fa-location-dot"></i> Pakistan
+                        </div>
+                        <h3>Naran Valley</h3>
+                        <p>Enjoy green landscapes, flowing rivers and incredible mountain scenery.</p>
+                        <div class="card-bottom">
+                            <span><i class="fa-solid fa-tree"></i> Green Escape</span>
+                            <button class="details-btn"
+                                data-name="Naran Valley"
+                                data-location="Kaghan Valley, Pakistan"
+                                data-description="Naran is known for its green surroundings, mountain scenery and access to beautiful places such as Saif-ul-Malook Lake.">
+                                View Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fairy Meadows -->
+            <div class="col-lg-4 col-md-6 destination-item" data-category="mountain">
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?w=900"
+                            alt="Mountain peaks">
+                        <span class="location-tag">Gilgit-Baltistan</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-location">
+                            <i class="fa-solid fa-location-dot"></i> Pakistan
+                        </div>
+                        <h3>Fairy Meadows</h3>
+                        <p>A magical destination with incredible views of Nanga Parbat and beautiful green meadows.</p>
+                        <div class="card-bottom">
+                            <span><i class="fa-solid fa-person-hiking"></i> Adventure</span>
+                            <button class="details-btn"
+                                data-name="Fairy Meadows"
+                                data-location="Diamer, Gilgit-Baltistan, Pakistan"
+                                data-description="Fairy Meadows offers breathtaking views of Nanga Parbat, peaceful alpine meadows and a memorable mountain adventure.">
+                                View Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Saif-ul-Malook -->
+            <div class="col-lg-4 col-md-6 destination-item" data-category="lake">
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=900"
+                            alt="Peaceful lake">
+                        <span class="location-tag">Kaghan Valley</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-location">
+                            <i class="fa-solid fa-location-dot"></i> Pakistan
+                        </div>
+                        <h3>Saif-ul-Malook Lake</h3>
+                        <p>Admire the crystal-clear lake surrounded by magnificent snow-covered mountains.</p>
+                        <div class="card-bottom">
+                            <span><i class="fa-solid fa-water"></i> Lake Views</span>
+                            <button class="details-btn"
+                                data-name="Saif-ul-Malook Lake"
+                                data-location="Naran, Kaghan Valley, Pakistan"
+                                data-description="Saif-ul-Malook is a famous alpine lake surrounded by dramatic mountain scenery. It is one of the most photographed natural attractions in northern Pakistan.">
+                                View Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Swat -->
+            <div class="col-lg-4 col-md-6 destination-item" data-category="valley">
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=900"
+                            alt="Green forest">
+                        <span class="location-tag">Khyber Pakhtunkhwa</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-location">
+                            <i class="fa-solid fa-location-dot"></i> Pakistan
+                        </div>
+                        <h3>Swat Valley</h3>
+                        <p>Explore lush green valleys, rivers, forests and charming mountain villages.</p>
+                        <div class="card-bottom">
+                            <span><i class="fa-solid fa-leaf"></i> Nature Escape</span>
+                            <button class="details-btn"
+                                data-name="Swat Valley"
+                                data-location="Khyber Pakhtunkhwa, Pakistan"
+                                data-description="Swat Valley is known for its green mountains, rivers, forests and scenic towns. It offers a refreshing escape for nature lovers.">
+                                View Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p id="noResults" class="no-results" hidden>
+            No destinations found. Try another search.
+        </p>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="destination-cta">
+    <div class="container text-center">
+        <span class="section-label">YOUR JOURNEY BEGINS HERE</span>
+        <h2>Ready To Explore The Beauty Of Nature?</h2>
+        <p>Let us help you plan an unforgettable travel experience.</p>
+        <a href="contact.html" class="primary-btn">
+            Plan Your Trip <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+<!-- DETAILS MODAL -->
+<div class="modal fade" id="destinationModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content details-modal">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Destination Name</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-location" id="modalLocation"></p>
+                <p id="modalDescription"></p>
+            </div>
+            <div class="modal-footer">
+                <a href="contact.html" class="primary-btn">Plan Your Visit</a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container text-center">
+        <h4><i class="fa-solid fa-mountain-sun"></i> ALPINE ASCENT</h4>
+        <p>Discover nature, experience adventure and create memories.</p>
+
+        <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Alpine Ascent. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="destination.js"></script>
+
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
